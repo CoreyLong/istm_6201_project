@@ -1,0 +1,60 @@
+/* variables */
+
+/* colors from Flat UI Pro http://designmodo.com/flat/ */
+$brand-alizarin:        #E74C3C;
+$brand-turquoise:       #1abc9c;
+$brand-green:           #75CE66;
+$brand-petermann:       #3498DB;
+$brand-pomegranate:     #C0392B;
+$brand-midnight:        #2C3E50;
+
+$text-color:            $brand-midnight;
+
+/* external */
+
+@import "bootstrap";
+@import "font-awesome";
+
+/* fonts */
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Lato/Lato-Bold.ttf');
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  padding-top: 70px;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.main {
+  .table-filter {
+    margin-left: 10px;
+  }
+}
+
+table th a {
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.max-height {
+  max-height: 200px;
+}

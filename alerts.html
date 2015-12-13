@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Alerts - PiPower</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+  <script type="text/javascript" src="assets/javascripts/scripts.js"></script>
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">GWireless Monitor</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <p class="navbar-text">Welcome, Shuba!</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="main">
+
+    <ul class="nav nav-tabs">
+      <li role="presentation"><a href="./">Dashboard</a></li>
+      <li role="presentation"><a href="./administration.html">Administration</a></li>
+      <li role="presentation" class="active"><a href="#">Alerts</a></li>
+    </ul>
+
+    <!-- filters -->
+    <div class="table-filter form-group pull-right">
+      <label>Timeframe</label>
+      <select class="form-control js-timeframe-filter">
+        <option>Last 2 weeks</option>
+      </select>
+    </div>
+
+    <div class="table-filter form-group pull-right">
+      <label>Event Level</label>
+      <select class="form-control js-event-level-filter">
+        <option>Critical</option>
+      </select>
+    </div>
+
+    <div class="table-filter form-group pull-right">
+      <label>Access Point</label>
+      <select class="form-control js-access-point-filter">
+        <option>All</option>
+      </select>
+    </div>
+
+    <h2 class="page-header">Alerts</h2>
+    
+    <!-- table -->
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th><a href="#">IP of Access Point</a></th>
+            <th><a href="#">Location of Access Point</a></th>
+            <th><a href="#">Event Level</a></th>
+            <th><a href="#">Event Description</a></th>
+            <th><a href="#">Timestamp <span class="caret"></span></a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1.1.2.3</td>
+            <td>DUQ3029</td>
+            <td>Critical</td>
+            <td>Timeout</td>
+            <td>11/30/2015 7:10PM</td>
+          </tr>
+          <tr>
+            <td>1.1.2.3</td>
+            <td>DUQ3029</td>
+            <td>Critical</td>
+            <td>Timeout</td>
+            <td>11/30/2015 7:10PM</td>
+          </tr>
+          <tr>
+            <td>1.1.2.3</td>
+            <td>DUQ3029</td>
+            <td>Critical</td>
+            <td>Timeout</td>
+            <td>11/30/2015 7:10PM</td>
+          </tr>
+          <tr>
+            <td>1.1.2.3</td>
+            <td>DUQ3029</td>
+            <td>Critical</td>
+            <td>Timeout</td>
+            <td>11/30/2015 7:10PM</td>
+          </tr>
+          <tr>
+            <td>1.1.2.3</td>
+            <td>DUQ3029</td>
+            <td>Critical</td>
+            <td>Timeout</td>
+            <td>11/30/2015 7:10PM</td>
+          </tr>
+          <tr>
+            <td>1.1.2.3</td>
+            <td>DUQ3029</td>
+            <td>Critical</td>
+            <td>Timeout</td>
+            <td>11/30/2015 7:10PM</td>
+          </tr>
+          <tr>
+            <td>1.1.2.3</td>
+            <td>DUQ3029</td>
+            <td>Critical</td>
+            <td>Timeout</td>
+            <td>11/30/2015 7:10PM</td>
+          </tr>
+          <tr>
+            <td>1.1.2.3</td>
+            <td>DUQ3029</td>
+            <td>Critical</td>
+            <td>Timeout</td>
+            <td>11/30/2015 7:10PM</td>
+          </tr>
+          <tr>
+            <td>1.1.2.3</td>
+            <td>DUQ3029</td>
+            <td>Critical</td>
+            <td>Timeout</td>
+            <td>11/30/2015 7:10PM</td>
+          </tr>
+          <tr>
+            <td>1.1.2.3</td>
+            <td>DUQ3029</td>
+            <td>Critical</td>
+            <td>Timeout</td>
+            <td>11/30/2015 7:10PM</td>
+          </tr> 
+        </tbody>
+      </table>
+    </div>
+
+    <nav class="text-center">
+      <ul class="pagination">
+        <li class="disabled">
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">9</a></li>
+        <li><a href="#">10</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+</body>
+</html>
