@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Alerts - PiPower</title>
+  <title>Administration - GWireless Monitor</title>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">  
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
-  <script type="text/javascript" src="assets/javascripts/scripts.js"></script>
 </head>
 <body>
 
@@ -40,6 +37,7 @@
 <div class="container-fluid">
   <div class="main">
 
+    <!-- nav-tabs -->
     <ul class="nav nav-tabs">
       <li role="presentation"><a href="./">Dashboard</a></li>
       <li role="presentation" class="active"><a href="./administration.html">Administration</a></li>
@@ -49,78 +47,83 @@
 
   <div class="row">
     <div class="col-sm-6">
-      <a class="btn btn-success pull-right" href="#">Add New</a>
-      <h2 class="page-header">All Monitors</h2>
+
+      <!-- All Monitors table -->
+      <div class="page-header clearfix">
+        <a class="btn btn-success pull-right" href="#">Add New</a>
+        <h2>All Monitors</h2>
+      </div>
+      
       <div class="table-responsive">
         <table class="table table-hover">
           <thead>
             <tr>
               <th>ID</th>
               <th>Name</th>
-              <th>IP of Monitor</th>
-              <th>IP of Access Point</th>
+              <th>Monitor MAC Address</th>
+              <th>Target MAC Address</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>1</td>
               <td>Lorem</td>
-              <td>1.1.1.1</td>
-              <td>1.1.2.1</td>
+              <td>5E-33-86-CF-DD-CB</td>
+              <td>8A-8C-BE-F5-68-1D</td>
             </tr>
             <tr class="info">
-              <td>1</td>
-              <td>Lorem</td>
-              <td>1.1.1.1</td>
-              <td>1.1.2.1</td>
+              <td>2</td>
+              <td>Ipsum</td>
+              <td>F7-95-42-F1-2C-97</td>
+              <td>CC-2A-EC-91-59-F0</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>Lorem</td>
-              <td>1.1.1.1</td>
-              <td>1.1.2.1</td>
+              <td>3</td>
+              <td>Dolor</td>
+              <td>27-AE-F9-B1-0F-D4</td>
+              <td>82-24-C1-69-60-D7</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>Lorem</td>
-              <td>1.1.1.1</td>
-              <td>1.1.2.1</td>
+              <td>4</td>
+              <td>Sit</td>
+              <td>D9-0D-09-AA-8C-3E</td>
+              <td>08-3D-07-CB-0D-31</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>Lorem</td>
-              <td>1.1.1.1</td>
-              <td>1.1.2.1</td>
+              <td>5</td>
+              <td>Amet</td>
+              <td>83-70-A0-AA-EA-3E</td>
+              <td>AA-4E-1B-85-F5-21</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>Lorem</td>
-              <td>1.1.1.1</td>
-              <td>1.1.2.1</td>
+              <td>6</td>
+              <td>Consecteteur</td>
+              <td>19-94-A9-EC-CF-6F</td>
+              <td>4B-3A-FA-10-EF-BA</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>Lorem</td>
-              <td>1.1.1.1</td>
-              <td>1.1.2.1</td>
+              <td>7</td>
+              <td>Adipiscing</td>
+              <td>56-0E-80-07-29-6E</td>
+              <td>1D-F2-9C-44-84-88</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>Lorem</td>
-              <td>1.1.1.1</td>
-              <td>1.1.2.1</td>
+              <td>8</td>
+              <td>Elit</td>
+              <td>9C-75-FA-C7-B8-50</td>
+              <td>42-FC-FE-21-59-47</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>Lorem</td>
-              <td>1.1.1.1</td>
-              <td>1.1.2.1</td>
+              <td>9</td>
+              <td>Maecenas</td>
+              <td>FB-8C-E1-77-33-79</td>
+              <td>24-32-81-21-60-19</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>Lorem</td>
-              <td>1.1.1.1</td>
-              <td>1.1.2.1</td>
+              <td>10</td>
+              <td>Pretium</td>
+              <td>6C-9B-DF-D4-41-DA</td>
+              <td>F7-37-C3-C5-50-D0</td>
             </tr> 
           </tbody>
         </table>
@@ -129,41 +132,44 @@
     <div class="col-sm-6">
       <h2 class="page-header">Configuration</h2>
 
-      <form class="form-horizontal">
-        <div class="form-group">
-          <label for="inputID" class="col-sm-2 control-label">ID</label>
-          <div class="col-sm-10">
-            <input class="form-control" id="inputID">
+      <form>
+        <div class="row">
+          <div class="form-group col-sm-6">
+            <label for="inputID" class="control-label">ID</label>
+            <input class="form-control" id="inputID" value="2">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="inputName" class="control-label">Name</label>
+            <input class="form-control" id="inputName" value="Ipsum">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-sm-6">
+            <label for="inputMonitorIP" class="control-label">Monitor MAC Address</label>
+            <input class="form-control" id="inputMonitorMAC" value="F7-95-42-F1-2C-97">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="inputIPAP" class="control-label">Target MAC Address</label>
+            <input class="form-control" id="inputTargetMAC" value="CC-2A-EC-91-59-F0">
           </div>
         </div>
         <div class="form-group">
-          <label for="inputName" class="col-sm-2 control-label">Name</label>
-          <div class="col-sm-10">
-            <input class="form-control" id="inputName">
-          </div>
+          <label for="inputURL" class="control-label">URL to Test</label>
+          <input class="form-control" id="inputURL" value="http://google.com">
         </div>
         <div class="form-group">
-          <label for="inputMonitorIP" class="col-sm-2 control-label">Monitor IP</label>
-          <div class="col-sm-10">
-            <input class="form-control" id="inputMonitorIP">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputIPAP" class="col-sm-2 control-label">IP of Access Point</label>
-          <div class="col-sm-10">
-            <input class="form-control" id="inputIPAP">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputURL" class="col-sm-2 control-label">URL to Test</label>
-          <div class="col-sm-10">
-            <input class="form-control" id="inputURL">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputTime" class="col-sm-2 control-label">Time between Tests</label>
-          <div class="col-sm-10">
-            <input class="form-control" id="inputTime">
+          <label for="inputTime" class="control-label">Time between Tests</label>
+          <div class="row">
+            <div class="col-xs-6">
+              <input class="form-control" id="inputTime" value="60">
+            </div>
+            <div class="col-xs-6">
+              <select class="form-control">
+                <option>seconds</option>
+                <option>minutes</option>
+                <option>hours</option>
+              </select>
+            </div>
           </div>
         </div>
       </form>

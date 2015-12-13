@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Alerts - PiPower</title>
+  <title>Alerts - GWireless Monitor</title>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">  
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
-  <script type="text/javascript" src="assets/javascripts/scripts.js"></script>
 </head>
 <body>
 
@@ -38,150 +35,194 @@
 </nav>
 
 <div class="container-fluid">
-  <div class="main">
+  <!-- nav-tabs -->
+  <ul class="nav nav-tabs">
+    <li role="presentation"><a href="./">Dashboard</a></li>
+    <li role="presentation"><a href="./administration.html">Administration</a></li>
+    <li role="presentation" class="active"><a href="#">Alerts</a></li>
+  </ul>
 
-    <ul class="nav nav-tabs">
-      <li role="presentation"><a href="./">Dashboard</a></li>
-      <li role="presentation"><a href="./administration.html">Administration</a></li>
-      <li role="presentation" class="active"><a href="#">Alerts</a></li>
-    </ul>
+  <!-- Alerts table -->
+  <div class="page-header clearfix">
 
-    <!-- filters -->
-    <div class="table-filter form-group pull-right">
-      <label>Timeframe</label>
-      <select class="form-control js-timeframe-filter">
-        <option>Last 2 weeks</option>
-      </select>
+    <!-- table filters -->
+    <div class="table-filter-group pull-right">
+      <div class="table-filter form-group pull-right">
+        <label>Timeframe</label>
+        <select class="form-control">
+          <option>Last 12 hours</option>
+          <option>Last 24 hours</option>
+          <option>Last 7 days</option>
+          <option selected="selected">Last 2 weeks</option>
+          <option>Last month</option>
+          <option>Last year</option>
+          <option>All</option>
+        </select>
+      </div>
+
+      <div class="table-filter form-group pull-right">
+        <label>Event Level</label>
+        <select class="form-control">
+          <option>Critical</option>
+          <option selected="selected">Warning</option>
+          <option>Success</option>
+        </select>
+      </div>
+
+      <div class="table-filter form-group pull-right">
+        <label>Access Point</label>
+        <select class="form-control">
+          <option>All</option>
+          <option>Lorem</option>
+          <option>Ipsum</option>
+          <option>Dolor</option>
+          <option>Sit</option>
+          <option>Amet</option>
+          <option>Consecteteur</option>
+          <option>Adipiscing</option>
+          <option>Elit</option>
+          <option>Maecenas</option>
+          <option>Pretium</option>
+        </select>
+      </div>
     </div>
 
-    <div class="table-filter form-group pull-right">
-      <label>Event Level</label>
-      <select class="form-control js-event-level-filter">
-        <option>Critical</option>
-      </select>
-    </div>
-
-    <div class="table-filter form-group pull-right">
-      <label>Access Point</label>
-      <select class="form-control js-access-point-filter">
-        <option>All</option>
-      </select>
-    </div>
-
-    <h2 class="page-header">Alerts</h2>
-    
-    <!-- table -->
-    <div class="table-responsive">
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th><a href="#">IP of Access Point</a></th>
-            <th><a href="#">Location of Access Point</a></th>
-            <th><a href="#">Event Level</a></th>
-            <th><a href="#">Event Description</a></th>
-            <th><a href="#">Timestamp <span class="caret"></span></a></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1.1.2.3</td>
-            <td>DUQ3029</td>
-            <td>Critical</td>
-            <td>Timeout</td>
-            <td>11/30/2015 7:10PM</td>
-          </tr>
-          <tr>
-            <td>1.1.2.3</td>
-            <td>DUQ3029</td>
-            <td>Critical</td>
-            <td>Timeout</td>
-            <td>11/30/2015 7:10PM</td>
-          </tr>
-          <tr>
-            <td>1.1.2.3</td>
-            <td>DUQ3029</td>
-            <td>Critical</td>
-            <td>Timeout</td>
-            <td>11/30/2015 7:10PM</td>
-          </tr>
-          <tr>
-            <td>1.1.2.3</td>
-            <td>DUQ3029</td>
-            <td>Critical</td>
-            <td>Timeout</td>
-            <td>11/30/2015 7:10PM</td>
-          </tr>
-          <tr>
-            <td>1.1.2.3</td>
-            <td>DUQ3029</td>
-            <td>Critical</td>
-            <td>Timeout</td>
-            <td>11/30/2015 7:10PM</td>
-          </tr>
-          <tr>
-            <td>1.1.2.3</td>
-            <td>DUQ3029</td>
-            <td>Critical</td>
-            <td>Timeout</td>
-            <td>11/30/2015 7:10PM</td>
-          </tr>
-          <tr>
-            <td>1.1.2.3</td>
-            <td>DUQ3029</td>
-            <td>Critical</td>
-            <td>Timeout</td>
-            <td>11/30/2015 7:10PM</td>
-          </tr>
-          <tr>
-            <td>1.1.2.3</td>
-            <td>DUQ3029</td>
-            <td>Critical</td>
-            <td>Timeout</td>
-            <td>11/30/2015 7:10PM</td>
-          </tr>
-          <tr>
-            <td>1.1.2.3</td>
-            <td>DUQ3029</td>
-            <td>Critical</td>
-            <td>Timeout</td>
-            <td>11/30/2015 7:10PM</td>
-          </tr>
-          <tr>
-            <td>1.1.2.3</td>
-            <td>DUQ3029</td>
-            <td>Critical</td>
-            <td>Timeout</td>
-            <td>11/30/2015 7:10PM</td>
-          </tr> 
-        </tbody>
-      </table>
-    </div>
-
-    <nav class="text-center">
-      <ul class="pagination">
-        <li class="disabled">
-          <a href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-          </a>
-        </li>
-        <li class="active"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">6</a></li>
-        <li><a href="#">7</a></li>
-        <li><a href="#">8</a></li>
-        <li><a href="#">9</a></li>
-        <li><a href="#">10</a></li>
-        <li>
-          <a href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <!-- table header -->
+    <h2>Alerts</h2>
   </div>
+
+  <div class="table-responsive">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th><a href="#">Monitor Name</a></th>
+          <th><a href="#">Access Point MAC</a></th>
+          <th><a href="#">Access Point Location</a></th>
+          <th><a href="#">Event Level</a></th>
+          <th><a href="#">Latency</a></th>
+          <th><a href="#">Event Description</a></th>
+          <th><a href="#">Event Time <span class="caret"></span></a></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="danger">
+          <td>Ipsum</td>
+          <td>CC-2A-EC-91-59-F0</td>
+          <td>FUN 500</td>
+          <td>Critical</td>
+          <td>2022 ms</td>
+          <td>Latency greater than 2000 ms</td>
+          <td>12/14/2015 7:10 PM</td>
+        </tr>
+        <tr class="warning">
+          <td>Lorem</td>
+          <td>8A-8C-BE-F5-68-1D</td>
+          <td>MON 255</td>
+          <td>Warning</td>
+          <td>1534 ms</td>
+          <td>Latency greater than 1000 ms</td>
+          <td>12/14/2015 6:45M</td>
+        </tr>
+        <tr class="danger">
+          <td>Consecteteur</td>
+          <td>4B-3A-FA-10-EF-BA</td>
+          <td>DUQ 353</td>
+          <td>Critical</td>
+          <td><strong>Timeout</strong></td>
+          <td>No response</td>
+          <td>12/14/2015 4:43 PM</td>
+        </tr>
+        <tr class="danger">
+          <td>Consecteteur</td>
+          <td>4B-3A-FA-10-EF-BA</td>
+          <td>DUQ 353</td>
+          <td>Critical</td>
+          <td><strong>Timeout</strong></td>
+          <td>No response</td>
+          <td>12/14/2015 4:42 PM</td>
+        </tr>
+        <tr class="danger">
+          <td>Consecteteur</td>
+          <td>4B-3A-FA-10-EF-BA</td>
+          <td>DUQ 353</td>
+          <td>Critical</td>
+          <td><strong>Timeout</strong></td>
+          <td>No response</td>
+          <td>12/14/2015 4:41 PM</td>
+        </tr>
+        <tr class="warning">
+          <td>Dolor</td>
+          <td>82-24-C1-69-60-D7</td>
+          <td>GEL 310</td>
+          <td>Warning</td>
+          <td>1301 ms</td>
+          <td>Latency greater than 1000 ms</td>
+          <td>12/12/2015 5:15 AM</td>
+        </tr>
+        <tr class="warning">
+          <td>Dolor</td>
+          <td>82-24-C1-69-60-D7</td>
+          <td>GEL 310</td>
+          <td>Warning</td>
+          <td>1104 ms</td>
+          <td>Latency greater than 1000 ms</td>
+          <td>12/13/2015 5:15 AM</td>
+        </tr>
+        <tr class="warning">
+          <td>Consecteteur</td>
+          <td>4B-3A-FA-10-EF-BA</td>
+          <td>DUQ 353</td>
+          <td>Warning</td>
+          <td>1410 ms</td>
+          <td>Latency greater than 1000 ms</td>
+          <td>12/10/2015 4:10 PM</td>
+        </tr>
+        <tr class="warning">
+          <td>Lorem</td>
+          <td>8A-8C-BE-F5-68-1D</td>
+          <td>MON 255</td>
+          <td>Warning</td>
+          <td>1802 ms</td>
+          <td>Latency greater than 1000 ms</td>
+          <td>12/1/2015 6:28 PM</td>
+        </tr>
+        <tr class="warning">
+          <td>Lorem</td>
+          <td>8A-8C-BE-F5-68-1D</td>
+          <td>MON 255</td>
+          <td>Warning</td>
+          <td>1513 ms</td>
+          <td>Latency greater than 1000 ms</td>
+          <td>11/30/2015 2:42 PM</td>
+        </tr> 
+      </tbody>
+    </table>
+  </div>
+
+  <nav class="text-center">
+    <ul class="pagination">
+      <li class="disabled">
+        <a href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">6</a></li>
+      <li><a href="#">7</a></li>
+      <li><a href="#">8</a></li>
+      <li><a href="#">9</a></li>
+      <li><a href="#">10</a></li>
+      <li>
+        <a href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </div>
 
 </body>

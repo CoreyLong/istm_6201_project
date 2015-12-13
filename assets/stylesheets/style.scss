@@ -13,7 +13,6 @@ $text-color:            $brand-midnight;
 /* external */
 
 @import "bootstrap";
-@import "font-awesome";
 
 /* fonts */
 
@@ -41,10 +40,9 @@ body {
   font-weight: 700;
 }
 
-.main {
-  .table-filter {
-    margin-left: 10px;
-  }
+.table-filter {
+  margin-left: 10px;
+  margin-bottom: 0;
 }
 
 table th a {
@@ -55,6 +53,22 @@ table th a {
   }
 }
 
+.page-header {
+  position: relative;
+
+  h1, h2, h3 {
+    margin: 0;
+    padding: inherit;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
 .max-height {
-  max-height: 200px;
+  max-height: 300px;
+}
+
+.table-hover {
+  cursor: pointer;
 }
